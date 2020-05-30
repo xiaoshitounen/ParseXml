@@ -28,4 +28,13 @@ public class WebItem {
     public void setContent(String content) {
         this.content = content;
     }
+
+    @Override
+    public String toString() {
+        return "WebItem{" +
+                "id=" + id +
+                ", url='" + url + '\'' +
+                ", content='" + content + '\'' +
+                '}';
+    }
 }
