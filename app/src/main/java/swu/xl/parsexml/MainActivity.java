@@ -144,6 +144,9 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "IO异常", Toast.LENGTH_SHORT).show();
         }
 
+        //关闭
+        xmlResourceParser.close();
+
         for (WebItem item : webItems) {
             //Toast.makeText(this, "id:"+item.getId()+" url:"+item.getUrl()+" content:"+item.getContent(), Toast.LENGTH_SHORT).show();
             //显示数据
@@ -152,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * DOM解读
+     * DOM解析
      */
     private void testDOMParse(){
         //存储解析的模型资源
